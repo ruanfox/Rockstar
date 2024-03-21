@@ -1,0 +1,160 @@
+.home{
+    width: 100%;
+
+    .img{
+
+        img{
+            width: 100%;
+            height: 100%;
+        }
+
+    }
+
+    .destaque{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 84%;
+        margin: 0 8%;
+        margin-top: 80px;
+
+        .title{
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 40px;
+            
+            strong{
+                color: var(--Text);
+                font-size: 48px;
+            }
+
+            .plataforma{
+                width: 404px;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+
+                p{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    color: var(--Text);
+                    font-size: 16px;
+                    height: 32px;
+                    background-color: var(--G3);
+                    border-radius: 100px;
+                    padding: 0 24px;
+                }
+
+            }
+        }
+
+        .cardDestaque{
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        Button{
+            margin-top: 64px;
+            width: 260px;
+            height: 62px;
+            box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.5);
+        }
+    }
+
+    .noticias{
+        display: flex;
+        flex-direction: column;
+        width: 84%;
+        margin: 0 8%;
+        margin-top: 112px;
+
+        strong{
+            font-size: 48px;
+            color: var(--Text);  
+            margin-bottom: 40px;
+        }
+
+        .cardNoticias {
+            display: grid;
+            grid-template-areas: 
+                "principal secondary"
+                "principal tertiary";
+        }
+        
+        .cardNoticias > *:nth-child(1) {
+            grid-area: principal;
+        }
+        
+        .cardNoticias > *:nth-child(2){
+            margin-bottom: 40px;
+        }
+
+        .cardNoticias > *:nth-child(2),
+        .cardNoticias > *:nth-child(3) {
+            grid-column-start: 2;
+            margin-left: 40px; /* Adicionando margem esquerda */
+        }
+        
+        
+    }
+
+    .launcher{
+        display: flex;
+        flex-direction: row;
+        width: 84%;
+        height: 536px;
+        margin: 0 8%;
+        margin-top: 112px;
+        background-image: url('./image/fundo.svg');
+        border-radius: 16px;
+        justify-content: space-between;
+
+        .part1{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-left: auto;
+            margin-right: auto;
+
+            .text{
+                width: 342px;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                margin-bottom: 32px;
+
+                h2{
+                    margin-left: 18px;
+                    font-size: 42px;
+                    font-weight: bold;
+                }
+
+            }
+                            
+            p{
+                font-size: 32px;
+                width:  326px;
+                margin-bottom: 96px;
+            }
+        }
+        
+        .part2{
+            margin-top: auto;
+            margin-bottom: auto;
+            width: 660px;
+            height: 470px;
+
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+
+}

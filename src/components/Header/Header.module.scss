@@ -1,0 +1,40 @@
+.header{
+    width: 100%;
+    height: 92px;
+    background-color: black;
+    position: fixed;
+
+    .header1{
+        margin: 0 8%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+
+        .part1{
+            display: flex;
+            justify-content: center; 
+            align-items: center;
+            
+            nav{
+
+                .navs{
+                    color: var(--Text);
+                    margin: 12px;
+                    font-size: 16px;
+                    text-decoration: none;
+                }
+            }
+        }
+
+        .part2{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            img{
+                margin-left: 40px;
+            }
+        }
+    }
+}

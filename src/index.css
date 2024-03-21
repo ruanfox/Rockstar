@@ -1,0 +1,15 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+}
+
+:root{
+  --base: #101010;
+  --Amarelo-Rock: #FCAF17;
+  --Rectangle: #020202;
+  --Text: #F6F6F6;
+  --G1: #B1B1B1;
+  --G2: #797979;
+  --G3: #606060;
+}
